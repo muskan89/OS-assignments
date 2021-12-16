@@ -7,7 +7,7 @@ Course: CS303
 =================================
 
 # 1.What does this program do? 
---------------------------
+
 
 In this assignment I had to implement three algorithms (first-fit,next-fit and best-fit).
 And make table of the output or results, I am getting after running my code.
@@ -20,8 +20,7 @@ And there is one more thread which is taking care of duration of processes alloc
 
 
 
-# 2.A description of how this program works (i.e. its logic)  
--------------------------------------------------------------
+# 2.A description of how this program works (i.e. its logic) 
 
 The objecting of the program is to observe that in which order algorithms among first-fit, next-fit and best-fit is effective.
 And, these algorithm is for dynammic partitioning. 
@@ -40,8 +39,7 @@ for preference: first-fit > next-fit > best-fit
 For getting steady state results and entering the data in table I ran my code for 10 minutes and for testing purpose(examples) which I pasted in this readme I ran this for 5 minutes.
 
  
-# 3. How to compile and run this program  
-----------------------------------------
+# 3. How to compile and run this program
 
 Commands to compile the code
 gcc main_file.c -lpthread
@@ -58,11 +56,10 @@ And, algo=1 for running first - fit algorithm
 algo=2 for running next - fit algorithm
 algo=3 for running best - fit algorithm
 
--------------------------------------------------------------------
 Example_1 :  ./a.out 1000 200 16 10 10 5 3                     
 
 Output:
---------------------------------------------------------------------
+
 p=1000  q=200  n=16  m=10  t=10sec   T=5minute(s) algo=3
 Already available memory = (p-q)mb which is 80 mb
 So you are using best-fit algorithm
@@ -73,11 +70,10 @@ Average timearound: 0.004082
 Memory utilisation: 98.246667 percent
 
 
--------------------------------------------------------------------------
 Example_2 : ./a.out 1000 200 10 20 10 5 2                         
 
 Output:
--------------------------------------------------------------------
+
 p=1000  q=200  n=10  m=20  t=10sec   T=5minute(s) algo=2
 Already available memory = (p-q)mb which is 80 mb
 So you are using next-fit algorithm
@@ -88,12 +84,10 @@ Average timearound: 0.000036
 Memory utilisation: 97.223333 percent
 
 
---------------------------------------------------------------------
--------------------------------------------------------------------------
 Example_3 : ./a.out 1000 200 10 10 10 5 1                             
 
 Output:
--------------------------------------------------------------------
+
 p=1000  q=200  n=10  m=10  t=10sec   T=5minute(s) algo=1
 Already available memory = (p-q)mb which is 80 mb
 So you are using first-fit algorithm
