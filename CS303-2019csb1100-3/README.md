@@ -6,7 +6,7 @@ Course: CS303
 
 =================================
 
-# 1.What does this program do? |
+# 1.What does this program do? 
 --------------------------
 In this assignment I had to implement three algorithms (first-fit,next-fit and best-fit).
 And make table of the output or results, I am getting after running my code.
@@ -20,7 +20,7 @@ And there is one more thread which is taking care of duration of processes alloc
 
 
 ------------------------------------------------------------
-# 2.A description of how this program works (i.e. its logic)  |
+# 2.A description of how this program works (i.e. its logic)  
 -------------------------------------------------------------
 
 The objecting of the program is to observe that in which order algorithms among first-fit, next-fit and best-fit is effective.
@@ -41,13 +41,13 @@ For getting steady state results and entering the data in table I ran my code fo
 
  
 --------------------------------------------------------------------------------------------------------
-# 3. How to compile and run this program  |
+# 3. How to compile and run this program  
 ----------------------------------------
 
--->Commands to compile the code
+Commands to compile the code
 gcc main_file.c -lpthread
 
--->After that enter the command:  
+After that enter the command:  
 ./a.out a.out p q n m t T algo
 
 
