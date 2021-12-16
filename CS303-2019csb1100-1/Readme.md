@@ -35,7 +35,7 @@
 
  
 
-3. How to compile and run this program  
+3.How to compile and run this program  
 ---------------------------------------------------------
 
         Commands to compile the code
