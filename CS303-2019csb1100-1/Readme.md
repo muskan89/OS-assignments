@@ -1,4 +1,4 @@
-1.What the program does?  |
+1.What the program does?  
 --------------------------
 
         We were suppose to write a program that arranges the communication between server and client.
@@ -24,7 +24,7 @@
 -------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------
-2.A description of how this program works (i.e. its logic)  |
+2.A description of how this program works (i.e. its logic)  
 -------------------------------------------------------------
         Firstly it start a socket for communication between server and client. 
         By starting I mean it makes a socket by creating a file named using the input in Command.
@@ -39,7 +39,7 @@
 
  
 --------------------------------------------------------------------------------------------------------
-3. How to compile and run this program  |
+3. How to compile and run this program  
 ----------------------------------------
 
         Commands to compile the code
