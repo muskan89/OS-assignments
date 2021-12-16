@@ -62,6 +62,7 @@ Example_1 :
         ./a.out 7500 512 4 1           
 
 Output:
+
         r=7500.000000 revolution per minute  Ts=4ms  N=512 byte(s) F=1
         So you have chosen Random to service requests
         Throughput (requests/sec) : 94.482237
@@ -75,6 +76,7 @@ Example_2 :
         ./a.out 15000 512 4 1          
 
 Output:
+
         r=15000.000000 revolution per minute  Ts=4ms  N=512 byte(s) F=1
         So you have chosen Random to service requests
         Throughput (requests/sec) : 103.177879
@@ -88,6 +90,7 @@ Example_3 :
         ./a.out 7500 512 4 2         
 
 Output:
+
         r=7500.000000 revolution per minute  Ts=4ms  N=512 byte(s) F=2
         So you have chosen FIFO to service requests
         Throughput (requests/sec) : 83.333333
@@ -101,6 +104,7 @@ Example_4 :
         ./a.out 15000 512 4 2        
 
 Output:
+
         r=15000.000000 revolution per minute  Ts=4ms  N=512 byte(s) F=2
         So you have chosen FIFO to service requests
         Throughput (requests/sec) : 117.046678
