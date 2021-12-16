@@ -42,19 +42,21 @@ For getting steady state results and entering the data in table I ran my code fo
 # 3. How to compile and run this program
 
 Commands to compile the code
+        
         gcc main_file.c -lpthread
 
 After that enter the command:  
+        
         ./a.out a.out p q n m t T algo
 
 
 where, 
-p,q,n,m,t are given parameter as per problem statement.
-here I have taken t in second(s) and T in minute(s).
+        p,q,n,m,t are given parameter as per problem statement.
+        here I have taken t in second(s) and T in minute(s).
 
-And, algo=1 for running first - fit algorithm
-algo=2 for running next - fit algorithm
-algo=3 for running best - fit algorithm
+        And, algo=1 for running first - fit algorithm
+        algo=2 for running next - fit algorithm
+        algo=3 for running best - fit algorithm
 
 Example_1 :  
         
