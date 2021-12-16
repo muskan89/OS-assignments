@@ -8,6 +8,7 @@ Course: CS303
 
 # 1.What does this program do? 
 --------------------------
+
 In this assignment I had to implement three algorithms (first-fit,next-fit and best-fit).
 And make table of the output or results, I am getting after running my code.
 Also I had to observe that which algorithm is efficient in terms of time complexity.
@@ -15,11 +16,10 @@ So, this program can be used to run any of the above three algorithm as per user
 This program generates random number of processes using a thread and generate various parameters like their sizes and durations.
 Then three functions are implemented which is running with the help of thread in parallel.
 And there is one more thread which is taking care of duration of processes allocated in memory.
--------------------------------------------------------------------------------------------------------------
 
 
 
-------------------------------------------------------------
+
 # 2.A description of how this program works (i.e. its logic)  
 -------------------------------------------------------------
 
@@ -40,7 +40,6 @@ for preference: first-fit > next-fit > best-fit
 For getting steady state results and entering the data in table I ran my code for 10 minutes and for testing purpose(examples) which I pasted in this readme I ran this for 5 minutes.
 
  
---------------------------------------------------------------------------------------------------------
 # 3. How to compile and run this program  
 ----------------------------------------
 
