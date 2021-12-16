@@ -7,12 +7,12 @@ Dispatcher is using dll_invoker to execute the function requested.
 
 Assumptions
 
+        Here, The client will send request message in the form of string to server which is in format "dll_name+function_name+paramer1+parameter2+.........."
 
-Here, The client will send request message in the form of string to server which is in format "dll_name+function_name+paramer1+parameter2+.........."
+        "+" is used as delimiter.
 
-"+" is used as delimiter.
-
-WHERE   dll_name ->Name of a dynamically loaded library,
+WHERE   
+          dll_name ->Name of a dynamically loaded library,
 
           function_name ->Name of a function to call from the DLL,
 
