@@ -1,25 +1,21 @@
 1.What the program does?  |
 --------------------------
 
-We were suppose to write a program that arranges the communication between server and client.
-The request of client is reached to dispatcher.
-Dispatcher is using dll_invoker to execute the function requested.
+        We were suppose to write a program that arranges the communication between server and client.
+        The request of client is reached to dispatcher.
+        Dispatcher is using dll_invoker to execute the function requested.
 
-Assumptions
-
+        Assumptions
         Here, The client will send request message in the form of string to server which is in format "dll_name+function_name+paramer1+parameter2+.........."
-
         "+" is used as delimiter.
 
-WHERE   
-        dll_name ->Name of a dynamically loaded library,
+        WHERE   
+            dll_name ->Name of a dynamically loaded library,
+            function_name ->Name of a function to call from the DLL,
+            parameter1,parameter2,...  ->They are the arguments of the function "function_name"
 
-        function_name ->Name of a function to call from the DLL,
-
-        parameter1,parameter2,...  ->They are the arguments of the function "function_name"
-
-I have assumed that the request message will ask to execute certain functions from math.h library only.
-cos, sin, tan, pow, floor, ceil, sqrt, exp, log, log10, fabs are the functions which can be executed after request.
+        I have assumed that the request message will ask to execute certain functions from math.h library only.
+        cos, sin, tan, pow, floor, ceil, sqrt, exp, log, log10, fabs are the functions which can be executed after request.
 
 
 
@@ -46,21 +42,18 @@ cos, sin, tan, pow, floor, ceil, sqrt, exp, log, log10, fabs are the functions w
 3. How to compile and run this program  |
 ----------------------------------------
 
-Commands to compile the code
+        Commands to compile the code
+        gcc local_socket_client_server.c -lpthread -ldl
 
-gcc local_socket_client_server.c -lpthread -ldl
 
+        Open two terminal after compiling the code.
+        On one terminal enter the command: 
+        ./a.out server ./cs303  (This will serve the purpose of server)
 
-Open two terminal after compiling the code.
-On one terminal enter the command:  
+        One another terminal enter the command: 
+        ./a.out client ./cs303 "libm.so.6+sin+2"        (This will serve the purpose of client)  
 
-./a.out server ./cs303  (This will serve the purpose of server)
-
-One another terminal enter the command: 
-
-./a.out client ./cs303 "libm.so.6+sin+2"        (This will serve the purpose of client)  
-
-NOTE: The command for client is just an example for running sin function from libm.so.6. We can use command for executing log10 function by entering        ./a.out client ./cs303 "libm.so.6+log10+100" 
+        NOTE: The command for client is just an example for running sin function from libm.so.6. We can use command for executing log10 function by entering        ./a.out client ./cs303 "libm.so.6+log10+100" 
 
 
 
