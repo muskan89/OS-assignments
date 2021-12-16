@@ -2,10 +2,13 @@
 --------------------------
 
 We were suppose to write a program that arranges the communication between server and client.
+
 The request of client is reached to dispatcher.
+
 Dispatcher is using dll_invoker to execute the function requested.
 
-Assumptions-->
+Assumptions
+
 
 Here, The client will send request message in the form of string to server which is in format "dll_name+function_name+paramer1+parameter2+.........."
 "+" is used as delimiter.
