@@ -42,10 +42,10 @@ For getting steady state results and entering the data in table I ran my code fo
 # 3. How to compile and run this program
 
 Commands to compile the code
-gcc main_file.c -lpthread
+        gcc main_file.c -lpthread
 
 After that enter the command:  
-./a.out a.out p q n m t T algo
+        ./a.out a.out p q n m t T algo
 
 
 where, 
@@ -56,44 +56,47 @@ And, algo=1 for running first - fit algorithm
 algo=2 for running next - fit algorithm
 algo=3 for running best - fit algorithm
 
-Example_1 :  ./a.out 1000 200 16 10 10 5 3                     
+Example_1 :  
+        ./a.out 1000 200 16 10 10 5 3                     
 
 Output:
 
-p=1000  q=200  n=16  m=10  t=10sec   T=5minute(s) algo=3
-Already available memory = (p-q)mb which is 80 mb
-So you are using best-fit algorithm
-Please wait for 5 minute(s) for results
+        p=1000  q=200  n=16  m=10  t=10sec   T=5minute(s) algo=3
+        Already available memory = (p-q)mb which is 80 mb
+        So you are using best-fit algorithm
+        Please wait for 5 minute(s) for results
 
-total no. of processes that get executed:2853
-Average timearound: 0.004082
-Memory utilisation: 98.246667 percent
-
-
-Example_2 : ./a.out 1000 200 10 20 10 5 2                         
-
-Output:
-
-p=1000  q=200  n=10  m=20  t=10sec   T=5minute(s) algo=2
-Already available memory = (p-q)mb which is 80 mb
-So you are using next-fit algorithm
-Please wait for 5 minute(s) for results
-
-total no. of processes that get executed:2085
-Average timearound: 0.000036
-Memory utilisation: 97.223333 percent
+        total no. of processes that get executed:2853
+        Average timearound: 0.004082
+        Memory utilisation: 98.246667 percent
 
 
-Example_3 : ./a.out 1000 200 10 10 10 5 1                             
+Example_2 : 
+        ./a.out 1000 200 10 20 10 5 2                         
 
 Output:
 
-p=1000  q=200  n=10  m=10  t=10sec   T=5minute(s) algo=1
-Already available memory = (p-q)mb which is 80 mb
-So you are using first-fit algorithm
-Please wait for 5 minute(s) for results
+        p=1000  q=200  n=10  m=20  t=10sec   T=5minute(s) algo=2
+        Already available memory = (p-q)mb which is 80 mb
+        So you are using next-fit algorithm
+        Please wait for 5 minute(s) for results
 
-total no. of processes that get executed:2085
-Average timearound: 0.000041
-Memory utilisation: 98.220000 percent
+        total no. of processes that get executed:2085
+        Average timearound: 0.000036
+        Memory utilisation: 97.223333 percent
+
+
+Example_3 : 
+        ./a.out 1000 200 10 10 10 5 1                             
+
+Output:
+
+        p=1000  q=200  n=10  m=10  t=10sec   T=5minute(s) algo=1
+        Already available memory = (p-q)mb which is 80 mb
+        So you are using first-fit algorithm
+        Please wait for 5 minute(s) for results
+
+        total no. of processes that get executed:2085
+        Average timearound: 0.000041
+        Memory utilisation: 98.220000 percent
 
