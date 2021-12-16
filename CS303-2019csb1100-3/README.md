@@ -57,6 +57,7 @@ algo=2 for running next - fit algorithm
 algo=3 for running best - fit algorithm
 
 Example_1 :  
+        
         ./a.out 1000 200 16 10 10 5 3                     
 
 Output:
@@ -72,6 +73,7 @@ Output:
 
 
 Example_2 : 
+        
         ./a.out 1000 200 10 20 10 5 2                         
 
 Output:
@@ -87,6 +89,7 @@ Output:
 
 
 Example_3 : 
+        
         ./a.out 1000 200 10 10 10 5 1                             
 
 Output:
